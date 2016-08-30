@@ -18,9 +18,8 @@
 " -----------------------------------------------------------------------------
 "  Highlight function names.
 " -----------------------------------------------------------------------------
-syn match    cCustomParen    "(" contains=cParen contains=cCppParen
-syn match    cCustomFunc     "\w\+\s*(\@=" contains=cCustomParen
-hi def link cCustomFunc  Function
+syn match   cCustomFunc "\w\+\s*(\@=" contains=cParen
+hi def link cCustomFunc Function
 
 " -----------------------------------------------------------------------------
 "  Source: aftersyntaxc.vim
