@@ -22,6 +22,15 @@ syn match   cCustomFunc "\w\+\s*(\@=" contains=cParen
 hi def link cCustomFunc Function
 
 " -----------------------------------------------------------------------------
+"  Highlight member variable names.
+" -----------------------------------------------------------------------------
+syn match   cCustomDot    "\." contained
+syn match   cCustomPtr    "->" contained
+syn match   cCustomMemVar "\.\w\+" contains=cCustomDot
+syn match   cCustomMemVar "->\w\+" contains=cCustomPtr
+hi def link cCustomMemVar Function
+
+" -----------------------------------------------------------------------------
 "  Source: aftersyntaxc.vim
 " -----------------------------------------------------------------------------
 
