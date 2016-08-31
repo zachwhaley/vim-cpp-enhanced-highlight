@@ -1384,7 +1384,7 @@ if version >= 508 || !exists("did_cpp_syntax_inits")
   HiLink cppSTLfunction     Function
   HiLink cppSTLfunctional   Typedef
   HiLink cppSTLconstant     Constant
-  HiLink cppSTLnamespace    Constant
+  HiLink cppSTLnamespace    Typedef
   HiLink cppSTLtype         Typedef
   HiLink cppSTLexception    Exception
   HiLink cppSTLiterator     Typedef
