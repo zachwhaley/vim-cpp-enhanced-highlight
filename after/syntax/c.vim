@@ -256,6 +256,12 @@ syn keyword	cAnsiName	and bitor not_eq xor
 syn keyword	cAnsiName	and_eq compl or xor_eq
 syn keyword	cAnsiName	bitand not or_eq
 
+" SIGPROCMASK(2)
+syn keyword cConstant SIG_BLOCK SIG_UNBLOCK SIG_SETMASK
+" SIGACTION(2)
+syn keyword cConstant SA_NOCLDSTOP SA_NOCLDWAIT SA_NODEFER SA_ONSTACK
+syn keyword cConstant SA_RESETHAND SA_RESTART SA_RESTORER SA_SIGINFO
+
 hi def link cAnsiFunction cFunction
 hi def link cAnsiName cIdentifier
 hi def link cFunction Function
