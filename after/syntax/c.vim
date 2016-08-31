@@ -26,8 +26,7 @@ hi def link cCustomFunc Function
 " -----------------------------------------------------------------------------
 syn match   cCustomDot    "\." contained
 syn match   cCustomPtr    "->" contained
-syn match   cCustomMemVar "\.\w\+" contains=cCustomDot
-syn match   cCustomMemVar "->\w\+" contains=cCustomPtr
+syn match   cCustomMemVar "\(\.\|->\)\w\+" contains=cCustomDot,cCustomPtr
 hi def link cCustomMemVar Function
 
 " -----------------------------------------------------------------------------
