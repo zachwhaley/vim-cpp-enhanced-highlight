@@ -32,17 +32,6 @@
 "   http://stackoverflow.com/questions/736701/class-function-names-highlighting-in-vim
 " -----------------------------------------------------------------------------
 
-" Functions
-syn match   cCustomFunc "\w\+\s*(\@=" contains=cCppParen
-hi def link cCustomFunc Function
-
-" Member Variables
-syn match   cCustomDot    "\." contained
-syn match   cCustomPtr    "->" contained
-syn match   cCustomMemVar "\.\w\+" contains=cCustomDot
-syn match   cCustomMemVar "->\w\+" contains=cCustomPtr
-hi def link cCustomMemVar Function
-
 " Class and namespace scope
 if exists('g:cpp_class_scope_highlight') && g:cpp_class_scope_highlight
     syn match   cCustomScope "::" contained

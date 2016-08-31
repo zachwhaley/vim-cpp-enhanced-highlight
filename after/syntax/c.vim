@@ -18,7 +18,7 @@
 " -----------------------------------------------------------------------------
 "  Highlight function names.
 " -----------------------------------------------------------------------------
-syn match   cCustomFunc "\w\+\s*(\@=" contains=cParen
+syn match   cCustomFunc "\w\+\s*(\@=" contains=cParen,cCppParen
 hi def link cCustomFunc Function
 
 " -----------------------------------------------------------------------------
